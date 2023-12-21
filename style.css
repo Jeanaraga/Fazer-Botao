@@ -10,9 +10,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(120deg, #000000, #8400f0);
   transition: 0.5s ease;
 }
@@ -30,6 +31,11 @@ body {
   border-radius: 5px;
   color: #fff;
   transition: 0.5s ease;
+  max-width: 95vh;
+}
+.container h2 {
+  font-size: 1.6rem;
+  letter-spacing: 1.5px;
 }
 .container .form-container {
   display: flex;
