@@ -1,49 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Fazer Botão</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h2>Personalize seu botão</h2>
-        <form class="form-container">
-            <div class="input-box">
-                <label for="largura">Largura/width em px:</label>
-                <input type="number" id="largura">
+      <h2>Personalize seu botão</h2>
+      <form class="form-container">
+        <div class="input-box">
+          <label for="largura">Largura/width em px:</label>
+          <input type="number" id="largura" />
+        </div>
+        <div class="input-box">
+          <label for="altura">Altura/height em px:</label>
+          <input type="number" id="altura" />
+        </div>
+        <div class="input-box">
+          <label for="borderRadius">Arrendondamento da borda em px:</label>
+          <input type="number" id="borderRadius" />
+        </div>
+        <div class="input-culumn">
+          <div class="culumn">
+            <label for="radioBox">Borda:</label>
+            <div class="radioBox" id="radioBox">
+              <input type="radio" name="simOuNao" id="simRadio" value="sim" />
+              <label for="simRadio">Sim</label>
+              <input type="radio" name="simOuNao" id="naoRadio" value="nao" />
+              <label for="naoRadio">Não</label>
             </div>
-            <div class="input-box">
-                <label for="altura">Altura/height em px:</label>
-                <input type="number" id="altura">
+          </div>
+          <div class="culumn">
+            <label for="radioBox">Sombra:</label>
+            <div class="radioBox" id="radioBox">
+              <input type="radio" name="snSombra" id="simSombra" value="sim" />
+              <label for="simSombra">Sim</label>
+              <input type="radio" name="snSombra" id="naoSombra" value="nao" />
+              <label for="naoSombra">Não</label>
             </div>
-            <div class="input-box">
-                <label for="borderRadius">Arrendondamento da borda em px:</label>
-                <input type="number" id="borderRadius">
-            </div>
-            <div class="input-box">
-                <label for="radioBox">Ter borda:</label>
-                <div class="radioBox" id="radioBox">
-                    <input type="radio" name="simOuNao" id="simRadio" value="sim">
-                    <label for="simRadio">Sim</label>
-                    <input type="radio" name="simOuNao" id="naoRadio" value="nao">
-                    <label for="naoRadio">Não</label>
-                </div>
-            </div>
-            <div class="input-color">
-                <label for="corFundo">Cor de Fundo:</label>
-                <input type="color" id="corFundo">
-            </div>
-            <div class="input-box"></div>
-            <div class="input-box"></div>
-            <div class="input-box"></div>
+          </div>
+        </div>
+        <div class="input-color">
+          <label for="corFundo">Cor de Fundo:</label>
+          <input type="color" id="corFundo" />
+        </div>
+        <div class="input-color">
+            <label for="corTexto">Cor do Texto:</label>
+            <input type="color" id="corTexto" />
+        </div>
 
-            <button type="submit">Ver Botão</button>
-        </form>
+        <button type="submit">Ver Botão</button>
+      </form>
     </div>
     <button id="resulte">Ver Codigo</button>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
